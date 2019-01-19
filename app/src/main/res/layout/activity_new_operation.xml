@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewOperationActivity">
+
+    <EditText
+        android:id="@+id/edt_day"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:inputType="datetime"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="28dp"
+        android:maxLength="2"
+        android:hint="روز"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/edt_month"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/edt_day"
+        android:layout_alignBottom="@+id/edt_day"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:ems="10"
+        android:inputType="datetime"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="28dp"
+        android:maxLength="2"
+        android:hint="ماه"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="44dp"
+        android:text="تاریخ :"
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="22dp"
+        android:text="/"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="45dp"
+        android:text="بدهکار :" />
+
+    <AutoCompleteTextView
+        android:id="@+id/edt_debtor"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edt_day"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-17dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="173dp"
+        android:layout_marginEnd="42dp"
+        android:maxLines="1"
+        android:text="بستانکار :" />
+
+    <AutoCompleteTextView
+        android:id="@+id/edt_creditor"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edt_day"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="0dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:maxLines="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="50dp"
+        android:text="مبلغ :" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="289dp"
+        android:layout_marginEnd="36dp"
+        android:text="توضیحات :" />
+
+    <EditText
+        android:id="@+id/edt_money"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edt_day"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="0dp"
+        android:ems="10"
+        android:inputType="datetime"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="98dp"
+        android:text="تایید" />
+
+    <EditText
+        android:id="@+id/edt_desc"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="79dp"
+        android:layout_marginBottom="-11dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:maxLines="3" />
+
+
+</RelativeLayout>

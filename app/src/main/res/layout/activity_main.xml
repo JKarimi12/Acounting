@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/btn_new_operation"
+        android:gravity="right"
+        android:text="در این بخش می‌توانید ثبت‌های جدید خود را انجام دهید." />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_alignTop="@+id/btn_newspaper"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/btn_newspaper"
+        android:text="دفتر روزنامه‌ای که براساس ثبت‌های‌تان به‌وجود آمده است را مشاهده کنید." />
+
+    <ImageButton
+        android:id="@+id/btn_new_operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="34dp"
+        app:srcCompat="@drawable/b" />
+
+    <ImageButton
+        android:id="@+id/btn_newspaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_new_operation"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="32dp"
+        app:srcCompat="@drawable/a" />
+
+    <ImageButton
+        android:id="@+id/btn_total"
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:layout_below="@+id/btn_newspaper"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="73dp"
+        app:srcCompat="@drawable/c" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_total"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="17dp"
+        android:layout_toStartOf="@+id/btn_total"
+        android:text="دفتر کل خود را مشاهده کنید."
+        />
+
+</RelativeLayout>

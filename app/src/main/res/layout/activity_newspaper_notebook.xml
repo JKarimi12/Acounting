@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewspaperNotebookActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="419dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="51dp"
+        android:layout_marginBottom="41dp" />
+
+    <TextView
+        android:id="@+id/txt_row1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="12dp"
+        android:text="ردیف" />
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txt_row1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="59dp"
+        android:text="تاریخ" />
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txt_row1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="154dp"
+        android:text="شرح" />
+
+    <TextView
+        android:id="@+id/text_debtor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txt_row1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="0dp"
+        android:text="بدهکار" />
+
+    <TextView
+        android:id="@+id/txt_creditor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_row1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:text="بستانکار" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="46dp"
+        android:background="#a40404" />
+
+    <TextView
+        android:id="@+id/txt_sum"
+        android:layout_width="56dp"
+        android:layout_height="22dp"
+        android:layout_alignStart="@+id/text_date"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="11dp"
+        android:text="جمع کل :" />
+
+    <TextView
+        android:id="@+id/txt_sum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/text_debtor"
+        android:layout_alignTop="@+id/txt_sum"
+        android:layout_marginTop="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/txt_sum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/text_debtor"
+        android:layout_alignTop="@+id/txt_sum1"
+        android:layout_marginStart="-71dp"
+        android:layout_marginTop="0dp"
+        android:text="" />
+</RelativeLayout>

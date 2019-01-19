@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="karimi.javad.accounting.AccountActivity">
+
+    <TextView
+        android:id="@+id/txt_remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_debtor"
+        android:layout_alignBottom="@+id/txt_row1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="-1dp"
+        android:text="مانده" />
+
+    <TextView
+        android:id="@+id/txt_account_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:gravity="center"
+        android:text="dsfdsfsdf"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_account"
+        android:layout_width="match_parent"
+        android:layout_height="354dp"
+        android:layout_above="@+id/txt_sum"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="12dp"
+        android:text="تاریخ" />
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_date"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="61dp"
+        android:text="شرح" />
+
+    <TextView
+        android:id="@+id/text_debtor"
+        android:layout_width="43dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_description"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="124dp"
+        android:text="بدهکار" />
+
+    <TextView
+        android:id="@+id/txt_creditor3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_debtor"
+        android:layout_alignBottom="@+id/txt_row1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="0dp"
+        android:text="بستانکار" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="112dp"
+        android:background="#a40404" />
+
+    <TextView
+        android:id="@+id/txt_sum"
+        android:layout_width="56dp"
+        android:layout_height="22dp"
+        android:layout_alignStart="@+id/text_date"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-26dp"
+        android:layout_marginBottom="11dp"
+        android:text="جمع کل :" />
+
+    <TextView
+        android:id="@+id/txt_sum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/text_debtor"
+        android:layout_alignTop="@+id/txt_sum"
+        android:layout_marginTop="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/txt_sum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/text_debtor"
+        android:layout_alignTop="@+id/txt_sum1"
+        android:layout_marginStart="-71dp"
+        android:layout_marginTop="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/txt_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_sum"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:text="TextView" />
+
+
+</RelativeLayout>
