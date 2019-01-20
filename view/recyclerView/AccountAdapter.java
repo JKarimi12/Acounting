@@ -1,5 +1,7 @@
 package karimi.javad.accounting.view.recyclerView;
 
+import android.arch.lifecycle.LiveData;
+import android.arch.lifecycle.MutableLiveData;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -23,6 +25,7 @@ public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.AccountH
     private final String account;
 //    private BigInteger remine;
     private int remine;
+    MutableLiveData<Integer> remineLivedata;
 
     private List<Operation> operationList;
     private final LayoutInflater mInflater;
@@ -32,6 +35,7 @@ public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.AccountH
         this.account = account;
 //        remine = new BigInteger("0");
         remine = 0;
+        remineLivedata = new MutableLiveData<>();
     }
 
     @NonNull
@@ -63,6 +67,7 @@ public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.AccountH
             accountHolder.txtDesc.setText(operation.getDescription());
 //            accountHolder.txtRemind.setText(remine.abs().toString());
             accountHolder.txtRemind.setText(Integer.toString(Math.abs(remine)));
+            remineLivedata.setValue(remine);
         }
         else{
             accountHolder.txtDesc.setText("An error occurred!");
@@ -93,6 +98,14 @@ public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.AccountH
 
     public void setRemine(int remine) {
         this.remine = remine;
+    }
+
+    public MutableLiveData<Integer> getRemineLivedata() {
+        return remineLivedata;
+    }
+
+    public void setRemineLivedata(MutableLiveData<Integer> remineLivedata) {
+        this.remineLivedata = remineLivedata;
     }
 
     class AccountHolder extends RecyclerView.ViewHolder{
