@@ -55,8 +55,14 @@ public class AccountActivity extends AppCompatActivity {
             }
         });
 
-        int remine = adapter.getRemine();
-        txtRemine.setText(Integer.toString(remine));
+        adapter.getRemineLivedata().observe(this, new Observer<Integer>() {
+            @Override
+            public void onChanged(@Nullable Integer integer) {
+                txtRemine.setText(Integer.toString(Math.abs(integer)) );
+            }
+        });
+
+
 
     }
 }
